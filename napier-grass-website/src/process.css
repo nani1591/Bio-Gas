@@ -1,0 +1,603 @@
+
+.process-page {
+  color: #173b2b;
+  background: #fff;
+}
+
+
+/* Move Process page content to the top */
+.process-hero {
+  padding: 20px 24px 60px !important;
+  margin-top: 0 !important;
+  background: #f0f7f0;
+}
+
+/* Align the entire hero content toward the top */
+.process-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove unwanted spacing above the text */
+.process-hero-copy {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .process-hero {
+    padding: 15px 20px 40px !important;
+  }
+
+  .process-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+
+.process-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.process-page .container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.process-page h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.process-page h2 {
+  font-size: 2rem;
+}
+
+.process-page p {
+  line-height: 1.8;
+  color: #607367;
+}
+
+.process-page .green-text {
+  color: #27945b;
+}
+
+.process-page .eyebrow {
+  color: #27844f;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.process-page .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.process-page button {
+  cursor: pointer;
+}
+
+.process-hero-visual {
+  padding: 40px 24px;
+  background: #fff;
+  border: 1px solid #dce9dd;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.process-visual-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.process-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0;
+  font-weight: 600;
+}
+
+.process-flow span {
+  padding: 10px 14px;
+  background: #edf7ee;
+  border-radius: 10px;
+}
+
+.process-page .section {
+  padding: 72px 24px;
+}
+
+.process-page .soft {
+  background: #f7faf7;
+}
+
+.process-page .section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.process-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.process-detail-card {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e0e9e1;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px #173b2b0a;
+}
+
+.process-detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.process-detail-icon {
+  font-size: 2rem;
+}
+
+.process-detail-number {
+  color: #27945b;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.process-detail-label {
+  color: #27844f;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.process-detail-card h3 {
+  font-size: 1.35rem;
+}
+
+.process-factors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.factor-list > div {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e9e1;
+}
+
+.factor-list > div > span {
+  color: #27945b;
+  font-weight: 700;
+}
+
+.impact-panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 40px;
+  background: #174c35;
+  color: white;
+  border-radius: 24px;
+}
+
+.impact-panel p {
+  color: #e0eee4;
+}
+
+.impact-panel .light-eyebrow {
+  color: #b5e8c5;
+}
+
+.impact-panel .light-btn {
+  flex-shrink: 0;
+}
+
+.impact-decoration {
+  position: absolute;
+  right: 20px;
+  bottom: -40px;
+  opacity: 0.1;
+  font-size: 9rem;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .process-hero-grid,
+  .process-detail-grid,
+  .process-factors {
+    grid-template-columns: 1fr;
+  }
+
+  .process-page .section-heading,
+  .impact-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .process-hero {
+    padding: 48px 20px;
+  }
+
+  .process-page .section {
+    padding: 48px 20px;
+  }
+}
+
+/* Napier Grass to Bio-CBG process flow */
+
+.process-page .process-hero-visual {
+  padding: 32px;
+  background: linear-gradient(145deg, #ffffff, #f1f8ef);
+  box-shadow: 0 16px 45px rgba(23, 59, 43, 0.08);
+}
+
+.process-page .flow-heading {
+  margin: 18px 0 24px;
+  color: #173b2b;
+  font-size: 1.65rem;
+  line-height: 1.3;
+}
+
+.process-flow-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 9px;
+}
+
+.process-flow-step {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  column-gap: 13px;
+  align-items: center;
+  padding: 13px 15px;
+  background: #fff;
+  border: 1px solid #dce9dd;
+  border-radius: 14px;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-flow-step:hover {
+  transform: translateX(4px);
+  box-shadow: 0 7px 18px rgba(23, 59, 43, 0.08);
+}
+
+.process-page .flow-step-icon {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #edf7e8;
+  font-size: 24px;
+}
+
+.process-flow-step strong {
+  align-self: end;
+  color: #173b2b;
+  font-size: 14px;
+}
+
+.process-flow-step small {
+  align-self: start;
+  margin-top: 4px;
+  color: #607367;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.process-page .process-flow-arrow {
+  align-self: center;
+  color: #27945b;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.process-page .process-flow-final {
+  background: #eaf5df;
+  border-color: #c6dfb5;
+}
+
+.process-page .process-byproduct {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px dashed #a7c995;
+  border-radius: 14px;
+  background: #f8fbf5;
+  text-align: left;
+}
+
+.process-byproduct > span {
+  font-size: 25px;
+}
+
+.process-byproduct strong {
+  color: #245b39;
+  font-size: 13px;
+}
+
+.process-page .process-byproduct p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .process-page .process-hero-visual {
+    padding: 23px 17px;
+  }
+
+  .process-page .flow-heading {
+    font-size: 1.4rem;
+  }
+
+  .process-flow-step {
+    padding: 12px;
+  }
+}
+
+/* NAPIER GRASS PROCESS INFOGRAPHIC */
+
+.process-infographic-section {
+  padding: 65px 24px 75px;
+  background: #fff;
+}
+
+.process-infographic-heading {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.process-infographic-heading h2 {
+  margin: 14px 0;
+  color: #173b2b;
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+}
+
+.process-infographic-heading h2 span {
+  color: #27945b;
+}
+
+.process-infographic-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #607367;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.process-infographic-frame {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e0e9df;
+  border-radius: 20px;
+  background: #f7faf5;
+  box-shadow: 0 14px 40px rgba(23, 59, 43, 0.08);
+}
+
+.process-infographic-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .process-infographic-section {
+    padding: 45px 16px 50px;
+  }
+
+  .process-infographic-heading {
+    margin-bottom: 22px;
+  }
+
+  .process-infographic-frame {
+    border-radius: 12px;
+    overflow-x: auto;
+  }
+
+  .process-infographic-frame img {
+    width: 100%;
+    min-width: 600px;
+  }
+}
+
+/* Napier Grass to Bio-CBG - Horizontal Flow */
+
+.process-page .process-hero-visual {
+  padding: 32px 24px;
+  background: linear-gradient(145deg, #ffffff, #f1f8ef);
+  box-shadow: 0 16px 45px rgba(23, 59, 43, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.process-page .flow-heading {
+  margin: 18px 0 24px;
+  color: #173b2b;
+  font-size: 1.65rem;
+  line-height: 1.3;
+}
+
+/* Arrange all stages horizontally */
+.process-page .process-flow-diagram {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 8px 2px 14px;
+  box-sizing: border-box;
+}
+
+/* Individual process stage */
+.process-page .process-flow-step {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  align-content: center;
+  align-items: center;
+
+  flex: 0 0 190px;
+  min-width: 190px;
+  min-height: 100px;
+  padding: 14px;
+
+  background: #ffffff;
+  border: 1px solid #dce9dd;
+  border-radius: 14px;
+  text-align: left;
+  box-sizing: border-box;
+
+  transition: transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.process-page .process-flow-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 7px 18px rgba(23, 59, 43, 0.10);
+}
+
+/* Stage icon */
+.process-page .flow-step-icon {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #edf7e8;
+  font-size: 23px;
+}
+
+/* Stage title */
+.process-page .process-flow-step strong {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  color: #173b2b;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Stage description */
+.process-page .process-flow-step small {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  margin-top: 5px;
+  color: #607367;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Horizontal arrows */
+.process-page .process-flow-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex: 0 0 20px;
+  color: #27945b;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+  transform: none;
+}
+
+/* Final Bio-CBG stage */
+.process-page .process-flow-final {
+  background: #eaf5df;
+  border-color: #c6dfb5;
+}
+
+/* Digestate by-product */
+.process-page .process-byproduct {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px dashed #a7c995;
+  border-radius: 14px;
+  background: #f8fbf5;
+  text-align: left;
+}
+
+.process-page .process-byproduct > span {
+  font-size: 25px;
+}
+
+.process-page .process-byproduct strong {
+  color: #245b39;
+  font-size: 13px;
+}
+
+.process-page .process-byproduct p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .process-page .process-hero-visual {
+    padding: 23px 17px;
+  }
+
+  .process-page .flow-heading {
+    font-size: 1.4rem;
+  }
+
+  .process-page .process-flow-diagram {
+    justify-content: flex-start;
+  }
+
+  .process-page .process-flow-step {
+    flex-basis: 180px;
+    min-width: 180px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,118 @@
+
+/* =====================================
+   HOME PAGE ANIMATIONS
+===================================== */
+
+/* Hero text enters smoothly */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero image entrance */
+@keyframes heroImageEnter {
+  from {
+    opacity: 0;
+    transform: translateX(35px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+/* Decorative circles */
+@keyframes circleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Small glowing green dot */
+@keyframes dotPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(118, 189, 38, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(118, 189, 38, 0);
+  }
+}
+
+/* Apply these classes to your JSX */
+.home-hero .hero-eyebrow {
+  animation: heroFadeUp 0.6s ease both;
+}
+
+.home-hero .hero-title {
+  animation: heroFadeUp 0.8s ease 0.1s both;
+}
+
+.home-hero .hero-description {
+  animation: heroFadeUp 0.8s ease 0.25s both;
+}
+
+.home-hero .hero-actions {
+  animation: heroFadeUp 0.8s ease 0.4s both;
+}
+
+.home-hero .hero-highlight {
+  animation: heroFadeUp 0.8s ease 0.55s both;
+}
+
+.home-hero .hero-image {
+  animation: heroImageEnter 1s ease 0.2s both;
+}
+
+/* Subtle hover zoom for hero photo */
+.home-hero .hero-image img {
+  transition: transform 0.6s ease;
+}
+
+.home-hero .hero-image:hover img {
+  transform: scale(1.035);
+}
+
+/* Decorative circle animation */
+.home-hero .hero-decoration {
+  animation: circleFloat 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Eyebrow dot */
+.home-hero .hero-dot {
+  animation: dotPulse 2.5s ease-in-out infinite;
+}
+
+/* Buttons */
+.home-hero .hero-actions a,
+.home-hero .hero-actions button {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.home-hero .hero-actions a:hover,
+.home-hero .hero-actions button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(18, 61, 40, 0.16);
+}
+
+/* Accessibility: respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .home-hero *,
+  .home-hero *::before,
+  .home-hero *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

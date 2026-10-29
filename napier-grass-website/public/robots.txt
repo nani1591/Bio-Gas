@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Add your deployed domain and sitemap URL after domain setup.

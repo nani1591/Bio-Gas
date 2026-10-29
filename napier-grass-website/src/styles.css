@@ -1,0 +1,131 @@
+
+/* =====================================
+   GLOBAL WEBSITE ANIMATIONS
+===================================== */
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+/* Animate page changes */
+.page-transition {
+  animation: pageEnter 0.55s ease both;
+}
+
+/* Hero content */
+.hero-content,
+.home-hero-content,
+.about-hero-content {
+  animation: fadeUp 0.8s ease both;
+}
+
+/* Cards */
+.card,
+.product-card,
+.solution-card,
+.about-value-card,
+.contact-info-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover,
+.product-card:hover,
+.solution-card:hover,
+.about-value-card:hover,
+.contact-info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(18, 61, 40, 0.12);
+}
+
+/* Images */
+.product-card img,
+.solution-card img,
+.consultation-photo {
+  transition: transform 0.45s ease;
+}
+
+.product-card:hover img,
+.solution-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Buttons */
+.primary-btn,
+.submit-btn,
+.btn {
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.primary-btn:hover,
+.submit-btn:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(18, 61, 40, 0.16);
+}
+
+/* Navbar links */
+nav a,
+.nav-link,
+.footer-links button {
+  transition: color 0.25s ease;
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Scroll reveal */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
